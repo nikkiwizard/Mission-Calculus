@@ -1,1 +1,50 @@
+import time
+import sys
 
+def delay_print(s):
+    for c in s:
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        #time.sleep(0.235)
+
+def choose():
+  while True:
+    choice = input("> ")
+    if choice != correct_choice:
+      print("Try Again")
+    else:
+      break
+
+delay_print("Welcome Agent \n")
+delay_print("Are you ready for your briefing? \n")
+input("Press Enter to continue:")
+
+print("A very important painting has been stolen from the calculus world.")
+print("The FBI have tasked you with getting it back. Be careful agent, the mission is filled with puzzles and problems to solve. Good Luck.")
+time.sleep(2)
+print("")
+
+delay_print("Day 1 \n")
+print("The FBI gave you a lead to start in an abandoned building. You arrive there in the early afternoon.")
+print("Do you:")
+print("1: Take a quick look outside and leave")
+print("2: Go inside and look around")
+correct_choice = "2"
+choose()
+print("")
+
+print("You take a look into all of the rooms with dusty furniture")
+print("On the wall, there is written:")
+delay_print("I am used in cities and I am the rule used in basic differentiation \n")
+delay_print("What am I? \n")
+print("1: The Quotient Rule")
+print("2: The Limit Definition of a Derivative")
+print("3: The Power Rule")
+correct_choice = "3"
+choose()
+print("")
+
+print("You: The Power Rule...? Of course!! It's pointing me to a big city!!")
+print("")
+
+delay_print("Day 2 \n")
