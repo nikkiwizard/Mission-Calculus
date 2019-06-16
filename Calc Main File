@@ -82,7 +82,7 @@ correct_choice = "1"
 choose()
 
 print("")
-print("You get on a plane back to FBI headquarters.
+print("You get on a plane back to FBI headquarters.")
 print("Forensics would know what to do with the backpack.")
 time.sleep(4.5)
 replit.clear()
